@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Functions</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td class="sidebar">
+                <div>
+                    <img class="Laoshi" src="C:\Users\lenovo\Documents\Project L\Python\Python Tutorial\Images\Laoshi with Violet BG.png">
+                </div>
+            </td>
+            <td>
+                <td>
+                    <div class="mainbar">
+                        <h1 class="Main_Heading">Python Functions</h1>
+                        <p>A function is a block of code which only runs when it is called.</p>
+                        <p>You can pass data, known as parameters, into a function.</p>
+                        <p>A function can return data as a result.</p>
+                        <h2 class="Sub_Heading">Creating a Function</h2>
+                        <p>In Python a function is defined using the def keyword:</p>
+                        <iframe src="https://trinket.io/embed/python3/34d7cfa054" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Calling a Function</h2>
+                        <p>To call a function, use the function name followed by parenthesis:</p>
+                        <iframe src="https://trinket.io/embed/python3/ce9a21b0fa" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Arguments</h2>
+                        <p>Information can be passed into functions as arguments.</p>
+                        <p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+                        <p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+                        <iframe src="https://trinket.io/embed/python3/50830d5b85" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Parameters or Arguments?</h2>
+                        <p>The terms parameter and argument can be used for the same thing: information that are passed into a function.</p>
+                        <h2 class="Sub_Heading">Number of Arguments</h2>
+                        <p>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+                        <iframe src="https://trinket.io/embed/python3/4210ba8276" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>If you try to call the function with 1 or 3 arguments, you will get an error:</p>
+                        <iframe src="https://trinket.io/embed/python3/0853b86775" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Arbitrary Arguments, *args</h2>
+                        <p>If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.</p>
+                        <p>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+                        <iframe src="https://trinket.io/embed/python3/a361d750f6" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Keyword Arguments</h2>
+                        <p>You can also send arguments with the key = value syntax.</p>
+                        <p>This way the order of the arguments does not matter.</p>
+                        <iframe src="https://trinket.io/embed/python3/8bc87386ae" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Aebitrary Keyword Arguments, **kwargs</h2>
+                        <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.</p>
+                        <p>This way the function will receive a dictionary of arguments, and can access the items accordingly:</p>
+                        <iframe src="https://trinket.io/embed/python3/faf9cbd640" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>Arbitrary Kword Arguments are often shortened to **kwargs in Python documentations.</p>
+                        <h2 class="Sub_Heading">Default Parameter Value</h2>
+                        <p>The following example shows how to use a default parameter value.</p>
+                        <p>If we call the function without argument, it uses the default value:</p>
+                        <iframe src="https://trinket.io/embed/python3/904f2f870a" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Passing a List as an Argument</h2>
+                        <p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+                        <p>E.g. if you send a List as an argument, it will still be a List when it reaches the function:</p>
+                        <iframe src="https://trinket.io/embed/python3/58cb84b12b" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Return Values</h2>
+                        <p>To let a function return a value, use the return statement:</p>
+                        <iframe src="https://trinket.io/embed/python3/372e60abcc" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Thhe pass Statement</h2>
+                        <p>function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.</p>
+                        <iframe src="https://trinket.io/embed/python3/64081547eb" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Recursion</h2>
+                        <p>Python also accepts function recursion, which means a defined function can call itself.</p>
+                        <p>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</p>
+                        <p>The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+                        <p>In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</p>
+                        <p>To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</p>
+                        <iframe src="https://trinket.io/embed/python3/3d0476c2af" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <br>
+                        <br>
+                        <button type="button" class="Next"><a href="../../Python Quiz/page19/index.html">Quiz</a></button>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

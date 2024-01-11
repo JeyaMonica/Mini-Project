@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python If..Else</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td class="sidebar">
+                <div>
+                    <img class="Laoshi" src="C:\Users\lenovo\Documents\Project L\Python\Python Tutorial\Images\Laoshi with Violet BG.png">
+                </div>
+            </td>
+            <td>
+                <td>
+                    <div class="mainbar">
+                        <h1 class="Main_Heading">Python If...Else</h1>
+                        <h2 class="Sub_Heading">Python Conditions and If Statements</h2>
+                        <p>Python supports the usual logical conditions from mathematics:</p>
+                        <ul>
+                            <li>Equals: a == b</li>
+                            <li>Not Equals: a != b</li>
+                            <li>Less than: a < b</li>
+                            <li>Less than or equal to: a <= b</li>
+                            <li>Greater than: a > b</li>
+                            <li>Greater than or equal to: a >= b</li>
+                        </ul>
+                        <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+                        <p>An "if statement" is written by using the if keyword.</p>
+                        <iframe src="https://trinket.io/embed/python3/a41f8c7098" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+                        <h2 class="Sub_Heading">Indentation</h2>
+                        <p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.</p>
+                        <iframe src="https://trinket.io/embed/python3/775e4d7776" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Elif</h2>
+                        <p>The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".</p>
+                        <iframe src="https://trinket.io/embed/python3/b5e0d717a7" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".</p>
+                        <h2 class="Sub_Heading">Else</h2>
+                        <p>The else keyword catches anything which isn't caught by the preceding conditions</p>
+                        <iframe src="https://trinket.io/embed/python3/4992008d7d" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>In this example a is greater than b, so the first condition is not true, also the elif condition is not true, so we go to the else condition and print to screen that "a is greater than b".</p>
+                        <p>You can also have an else without the elif:</p>
+                        <iframe src="https://trinket.io/embed/python3/283b18d396" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Short Hand If</h2>
+                        <p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+                        <iframe src="https://trinket.io/embed/python3/68c829ab85" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Short Hand If ... Else</h2>
+                        <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</p>
+                        <iframe src="https://trinket.io/embed/python3/db8192de8c" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <p>You can also have multiple else statements on the same line:</p>
+                        <iframe src="https://trinket.io/embed/python3/e76113b952" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">And</h2>
+                        <p>The and keyword is a logical operator, and is used to combine conditional statements:</p>
+                        <iframe src="https://trinket.io/embed/python3/d03ebe24f3" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Or</h2>
+                        <p>The or keyword is a logical operator, and is used to combine conditional statements:</p>
+                        <iframe src="https://trinket.io/embed/python3/e11286846a" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Not</h2>
+                        <p>The not keyword is a logical operator, and is used to reverse the result of the conditional statement:</p>
+                        <iframe src="https://trinket.io/embed/python3/5ac1339f27" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">Nested If</h2>
+                        <p>You can have if statements inside if statements, this is called nested if statements.</p>
+                        <iframe src="https://trinket.io/embed/python3/7b5c1c0629" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <h2 class="Sub_Heading">The pass Statement</h2>
+                        <p>if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.</p>
+                        <iframe src="https://trinket.io/embed/python3/2f076636d1" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="button" class="Next"><a href="../../Python Quiz/page16/index.html">Quiz</a></button>
+                        
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

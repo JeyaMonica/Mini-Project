@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Short Hand If...Else</title> 
+    <link rel="stylesheet" href="../../css/java-3.css">
+</head>
+<body>
+    <div class="mainbar">
+        <h1 class="heading_1">Java Short Hand If...Else (Ternary Operator)
+        </h1><hr size="1">
+        <h2 class="heading_2">Short Hand If...Else
+        </h2>
+        <p>
+            There is also a short-hand if else, which is known as the ternary operator because it consists of three operands.
+        </p>
+        <p>
+            It can be used to replace multiple lines of code with a single line, and is most often used to replace simple if else statements:
+        </p>
+        <div class="outer_cmd">
+            <h3 class="heading_3">Syntax</h3>
+            <div class="inner_cmd">
+               <p>
+                variable = (condition) ? expressionTrue :  expressionFalse;</p>
+            </div>
+        </div>
+        <p>
+            Instead of writing:
+        </p>
+        <div class="outer_cmd">
+            <h3 class="heading_3">Example</h3>
+            <div class="inner_cmd">
+               <p>
+                int time = 20;
+                <br>if (time < 18) {
+                    <br>System.out.println("Good day.");
+                    <br>} else {
+                        <br>System.out.println("Good evening.");
+                        <br> }</p>
+            </div>
+        </div>
+        <p>
+            You can simply write:  
+        </p>
+        <div class="outer_cmd">
+            <h3 class="heading_3">Example</h3>
+            <div class="inner_cmd">
+               <p>
+                int time = 20;
+                <br>String result = (time < 18) ? "Good day." : "Good evening.";
+                <br>System.out.println(result);
+            </div>
+        </div>
+        <h2 class="heading_2">Test Yourself With Exercises!</h2>  
+        <h3 class="heading_3">Exercise:</h3>
+        <p>
+            Write a short hand if...else statement
+        </p>
+        <iframe src="https://trinket.io/embed/java/c00eeb6019" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0"></iframe><br>
+        <br>
+        <form action="saveJourney.php" method="POST">
+            <input type="hidden" name="pk" value="">
+            <input type="hidden" name="journey" value="43">
+            <button type="submit" value="Submit" >Save Journey </button></form>
+        <button type="button" class="Next"><a href="../../../Java Quiz/page25/index.html">Quiz</a></button>  </div> 
+    </div>
+</body>
+</html>

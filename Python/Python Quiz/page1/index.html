@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="quiz">
+			<h1>Simple Quiz</h1>
+			<hr>
+			<form id="quiz-form">
+				<h3>Question 1: <strong>True or False:</strong> Python is an interpreted Language</h3>
+				<label><input type="radio" name="q1" value="a">True</label><br>
+				<label><input type="radio" name="q1" value="b">False</label><br>
+				<h3>Question 2: Python was designed for readability, and has some similarities to the which language?</h3>
+				<label><input type="radio" name="q2" value="a">French</label><br>
+				<label><input type="radio" name="q2" value="b">Japanese</label><br>
+				<label><input type="radio" name="q2" value="c">English</label><br>
+				<br>
+				<input type="button" value="Submit" onclick="submitQuiz()">
+			</form>
+			<br>
+			<div id="quiz-results"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+	
+</body>
+</html>

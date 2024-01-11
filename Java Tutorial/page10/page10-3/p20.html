@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java StringsJava Special Characters
+    </title> 
+    <link rel="stylesheet" href="../../css/java-3.css">
+</head>
+<body>
+    <div class="mainbar">
+        <h1 class="heading_1">Java Special Characters
+        </h1><hr size="1">
+        <h2 class="heading_2">Strings - Special Characters</h2>
+        <p>
+            Because strings must be written within quotes, Java will misunderstand this string, and generate an error:
+        </p>
+        <div class="outer_cmd-2">
+            <div class="inner_cmd-2">
+                String txt = "We are the so-called "Vikings" from the north.";
+            </div>
+        </div>
+        <p>
+            The solution to avoid this problem, is to use the backslash escape character.
+        </p>
+        <p>
+            The backslash (\) escape character turns special characters into string characters:
+        </p>
+        <table>
+            <tr>
+              <th>
+                Escape character</th>
+              <th>Result</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>\'</td>
+              <td>'</td>
+              <td>Single quote</td>
+            </tr>
+            <tr>
+              <td>\'</td>
+              <td>"</td>
+              <td>Double quote</td>
+            </tr>
+            <tr>
+                <td>\\</td>
+                <td>\</td>
+                <td>Backslash</td>
+              </tr>
+          </table>
+          <p>
+            The sequence \"  inserts a double quote in a string:
+          </p> 
+            <h3 class="heading_3">Example</h3>
+            <iframe src="https://trinket.io/embed/java/e5d0f92b9d" class="iframe"width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>
+            The sequence \'  inserts a single quote in a string:
+        </p>
+            <h3 class="heading_3">Example</h3>
+            <iframe src="https://trinket.io/embed/java/2dee0e2420"class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>
+            The sequence \\  inserts a single backslash in a string:
+        </p>
+        <h3 class="heading_3">Example</h3>
+        <iframe src="https://trinket.io/embed/java/c835ac4292"class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <p>
+            Other common escape sequences that are valid in Java are:
+        </p>
+        <table>
+            <tr>
+              <th>
+                Code</th>
+              <th>Result</th>
+            </tr>
+            <tr>
+                <td>\n</td>
+                <td>New Line</td>
+              </tr>
+              <tr>
+                <td>\r</td>
+                <td>Carriage Return</td>
+              </tr>
+              <tr>
+                <td>\t</td>
+                <td>Tab</td>
+              </tr>
+              <tr>
+                <td>\b</td>
+                <td>Backspace</td>
+              </tr>
+              <tr>
+                <td>\f</td>
+                <td>Form Feed</td>
+              </tr>
+        </table>
+        <br>
+        <button type="button" class="Next"><a href="../../../Java Quiz/page20/index.html">Quiz</a></button>  
+      </div> 
+
+    </div>
+</body>
+</html>

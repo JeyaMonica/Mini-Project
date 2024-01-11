@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Introduction</title> 
+    <link rel="stylesheet" href="../css/java-3.css">
+</head>
+
+<body>
+    <div id="page 1">
+    <div class="mainbar">
+    <h1 class="heading_1"> Java Getting Started</h1><hr size="1">
+    <h2 class="heading_2"> Java Install</h2>
+    <p> Some PCs might have Java already installed</p>
+    <p>To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
+    <div class="outer_cmd-3">
+        <div class="inner_cmd-3">
+            <p>C:\Users\Your Name>java -version</p>
+        </div>
+    </div>
+    <p>
+        If Java is installed, you will see something like this (depending on version):
+    </p>
+    <div class="outer_cmd-3">
+        <div class="inner_cmd-3">
+            <p>
+                java version "11.0.1" 2018-10-16 LTS
+                Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+                Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+            </p>
+        </div>
+    </div>
+    <p>
+        If you do not have Java installed on your computer, you can download it for free at <a href="https://www.oracle.com/java/technologies/java-se-glance.html">oracle.com.</a> 
+    </p>
+    <p>
+        <b>Note:</b> In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.
+    </p>
+    <hr size="1">
+    <h1 class="heading_2">
+        Setup for Windows
+    </h1>
+    <p>
+        To install Java on Windows:
+    </p>
+    <ol>
+        <li>
+            Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings)
+        </li>
+        <li>
+            Click on the "Environment variables" button under the "Advanced" tab
+        </li>
+        <li>
+            Then, select the "Path" variable in System variables and click on the "Edit" button
+        </li>
+        <li>
+            Click on the "New" button and add the path where Java is installed, followed by <b>\bin</b>. By default, Java is installed in C:\Program Files\Java\jdk-11.0.1 (If nothing else was specified when you installed it). In that case, You will have to add a new path with:<b>C:\Program Files\Java\jdk-11.0.1\bin </b>
+        </li>
+        <li>
+            At last, open Command Prompt (cmd.exe) and type java -version to see if <b>Java is running on your machine</b>
+        </li>
+    </ol>
+    <hr size="1">
+    <h1 class="heading_2">
+        Java Quickstart
+    </h1>
+    <p>
+        In Java, every application begins with a class name, and that class must match the filename.  
+    </p>
+    
+    <p>
+        Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad). 
+    </p>
+    <p>
+        The file should contain a "Hello World" message, which is written with the following code:
+    </p>
+    <h3 class="heading_3">Main.java</h3>
+        <iframe src="https://trinket.io/embed/java/f7968368fd" class="iframe"width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <p>
+        Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code above.
+
+        Save the code in Notepad as "Main.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac Main.java":
+    </p>
+    <div class="outer_cmd-3">
+        <div class="inner_cmd-3">
+            <p>
+                C:\Users\Your Name>javac Main.java
+            </p>
+        </div>
+    </div>
+    <p>
+        This will compile your code. If there are no errors in the code, the command prompt will take you to the next line. Now, type "java Main" to run the file:
+    </p>
+    <div class="outer_cmd-3">
+        <div class="inner_cmd-3">
+            <p>
+                C:\Users\Your Name>java Main 
+            </p>
+        </div>
+    </div>
+    <p>
+        The output should read:
+    </p>
+    <div class="outer_cmd-3">
+        <div class="inner_cmd-3">
+            Hello World
+        </div>
+    </div>
+    <p> Let's try out the first Java program!</p>
+    <br>
+
+    <iframe src="https://trinket.io/embed/java/5a6b1a1946" class="iframe" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe><p>
+   <b>Congratulations!</b>  You have written and executed your first Java program.
+</p>
+<button type="button" class="Next"><a href="../../Java Quiz/page1/index.html">Quiz</a></button>
+</div>
+</div>
+
+</body>
+</html>
+

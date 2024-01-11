@@ -1,0 +1,153 @@
+.heading_1{
+    font-size: 50px;
+    color:rgb(106, 18, 189);
+
+}
+.heading_2{
+    font-size: 30px;
+    color:rgb(173, 101, 240);
+}
+.heading_3{
+    font-size: 30px;
+    color:rgb(106, 18, 189);}
+.outer_cmd{
+    padding-top: 1px;
+    padding-bottom: 25px;
+    padding-left: 2em;
+    padding-right: 2em;
+    color:rgb(106, 18, 189);
+    border-radius: 15px;
+}
+.inner_cmd{
+    background-color: black;
+    color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    
+}
+.iframe{
+    height: 200px;
+    width:900px;
+    border-radius: 15px;
+}.mainbar{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+body{
+    margin:0px;
+    border: 0px;
+    font-family: Consolas;
+    line-height: 2em;
+}
+.imp-para{
+    background-color: #fff4d2;
+}
+
+.Laoshi-table {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+    font-size: 105%;
+    background-color: rgba(222,222,222,0.3);
+    box-sizing: inherit;
+    font-family: Consolas,Menlo,"courier new",monospace;
+}
+.notes-para{
+    background-color: #fff4d2
+}
+.outer_cmd-2{
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 25px;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color:#FDE0E0 ;
+    border-radius: 15px;
+
+}
+.inner_cmd-2{
+    background-color: black;
+    color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+}
+.outer_cmd-3{
+    padding: 20px;
+    background-color:rgb(173, 101, 240,0.75) ;
+    border-radius: 15px;
+}
+.inner_cmd-3{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 15px;
+    
+}
+.imp-para2{
+    background-color:#ffdddd ;
+}
+.button{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(173, 101, 240);
+    transition-duration: 0.7s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Consolas;
+}
+.button:hover {
+    background-color: rgba(108, 40, 171, 0.755); /* Green */
+    color: white;
+  }
+.table{
+    
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+    
+  }
+  .button{
+    display:block-inline;
+}
+  .T{
+    display: block;
+    overflow-x: auto;
+}
+.table td,.table th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.Next{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(173, 101, 240);
+    padding: 15px 32px;
+    transition-duration: 0.7s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Consolas;
+}
+.Next:hover{
+    background-color: rgb(173, 101, 240);
+    color: white;
+
+}
+
+
+  

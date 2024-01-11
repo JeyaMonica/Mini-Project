@@ -1,0 +1,89 @@
+.sidebar{
+    background-color: rgb(173, 101, 240);
+    border:0px;
+    width:0px;
+    margin:0px;
+    padding:0%;
+    padding-bottom: 650px;
+
+}
+.table{
+    border:0px;
+}
+.Laoshi{
+    height: 200px;
+    width:auto;
+    image-orientation: top;
+}
+body{
+    margin:0px;
+    border: 0px;
+    font-family: Consolas;
+    line-height: 2em;
+}
+button{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(173, 101, 240);
+    transition-duration: 0.7s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Consolas;
+}
+button:hover{
+    background-color: rgb(173, 101, 240);
+    color: white;
+}
+.mainbar{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.Main_Heading{
+    font-size: 50px;
+    color:rgb(106, 18, 189);
+}
+
+.Sub_Heading{
+    font-size: 30px;
+    color:rgb(173, 101, 240);
+}
+
+.outer_cmd{
+    padding: 20px;
+    background-color:rgb(173, 101, 240,0.75) ;
+    border-radius: 15px;
+}
+.inner_cmd{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    border-radius: 15px;
+    
+}
+.iframe{
+    height: 200px;
+    width:900px;
+    border-radius: 15px;
+}
+.button{
+    display:block-inline;
+}
+.Next{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(173, 101, 240);
+    transition-duration: 0.7s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Consolas;
+}
+.Next:hover{
+    background-color: rgb(173, 101, 240);
+    color: white;
+
+}

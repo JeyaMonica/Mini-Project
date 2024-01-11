@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="quiz">
+			<h1>Simple Quiz</h1>
+			<hr>
+			<form id="quiz-form">
+				<h3>Which of the following lists have a defined order that will not change?</h3>
+				<label><input type="radio" name="q1" value="a">Ordered lists</label><br>
+				<label><input type="radio" name="q1" value="b">Unordered lists </label><br>
+				<label><input type="radio" name="q1" value="c">Changeable lists</label><br>
+
+				<br>
+				<input type="button" value="Submit" onclick="submitQuiz()">
+			</form>
+			<br>
+			<div id="quiz-results"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
