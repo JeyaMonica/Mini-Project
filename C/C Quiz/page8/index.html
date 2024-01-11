@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="quiz">
+			<h1>Simple Quiz</h1>
+			<hr>
+			<form id="quiz-form">
+				<h3>Which of the following conversion is done automatically by the compiler when you assign a value of one type to another?</h3>
+				<label><input type="radio" name="q1" value="a">Implicit conversion</label><br>
+				<label><input type="radio" name="q1" value="b">Explicit Conversion </label><br>
+				<label><input type="radio" name="q1" value="c">Inverted Conversion</label><br>
+                <br>
+                <input type="button" value="Submit" onclick="submitQuiz()">
+			</form>
+			<br>
+			<div id="quiz-results"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

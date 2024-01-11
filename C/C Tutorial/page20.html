@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Special Characters</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Special Characters</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="spechar">
+        <h2>Strings- Special Characters</h2>
+            <p>Because strings must be written within quotes, C will misunderstand this string, and generate an error:</p>
+            <div class="outer_cmd">
+                    <div class="inner_cmd">
+                    <p>char txt[] = "We are the so-called "Vikings" from the north.";</p>
+                    </div>
+                </div>
+                <p>The solution to avoid this problem, is to use the backslash escape character.<br>
+
+                    The backslash (\) escape character turns special characters into string characters:</p>
+                    <table border="2">
+                        <tr>
+                          <td>Escape character</td>
+                          <td>Result</td>
+                          <td>Description</td>
+                        </tr>
+                        <tr>
+                          <td>\'</td>
+                          <td>'</td>
+                          <td>Single quote</td>
+                        </tr>
+                        <tr>
+                          <td>\"</td>
+                          <td>"</td>
+                          <td>Double quote</td>
+                        </tr>
+                        <tr>
+                          <td>\\</td>
+                          <td>\</td>
+                          <td>Backslash</td>
+                        </tr>
+                       </table>
+                       <p>The sequence \"  inserts a double quote in a string:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                        <div class="inner_cmd">
+                        <p>char txt[] = "We are the so-called \"Vikings\" from the north.";</p>
+                        </div>
+                    </div> 
+                    <p>The sequence \'  inserts a single quote in a string:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                        <div class="inner_cmd">
+                        <p>char txt[] = "It\'s alright.";</p>
+                        </div>
+                    </div> 
+                    <p>The sequence \\  inserts a single backslash in a string:</p>   
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                        <div class="inner_cmd">
+                        <p>char txt[] = "The character \\ is called backslash.";</p>
+                        </div>
+                    </div>
+                    <p>Other popular escape characters in C are:</p>
+                    <table border="1">
+                        <tr>
+                          <td>Escape character</td>
+                          <td>Result</td>
+                        </tr>
+                        <tr>
+                          <td>\n</td>
+                          <td>New Line</td>
+                        </tr>
+                        <tr>
+                          <td>\t</td>
+                          <td>Tab</td>
+                        </tr>
+                        <tr>
+                          <td>\0</td>
+                          <td>Null</td>
+                          </tr>
+                       </table>
+                </div>
+                 <p>You can try yourself in this compiler</p>
+        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe> 
+        <button type="button" class="Next"><a href="../C Quiz/page20/index.html">Quiz</a></button>
+                
+  </body>
+</html>

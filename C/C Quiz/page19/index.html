@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="quiz">
+			<h1>Simple Quiz</h1>
+			<hr>
+			<form id="quiz-form">
+				<h3>Strings are immutable.</h3>
+				<label><input type="radio" name="q1" value="a">True</label><br>
+				<label><input type="radio" name="q1" value="b">False</label><br>
+                <br>
+                <input type="button" value="Submit" onclick="submitQuiz()">
+			</form>
+			<br>
+			<div id="quiz-results"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

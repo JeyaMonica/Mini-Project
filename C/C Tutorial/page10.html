@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Operators</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Operators</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="operators">
+        <h2>Operators</h2>
+            <p>Operators are used to perform operations on variables and values.</p>
+            <p>In the example below, we use the + operator to add together two values:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+               <div class="inner_cmd">
+                <p>int myNum = 100 + 50;</p>
+            </div>
+        </div>
+            <p>Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:</p>
+            <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int sum1 = 100 + 50;        // 150 (100 + 50)<br>
+                            int sum2 = sum1 + 250;      // 400 (150 + 250)<br>
+                            int sum3 = sum2 + sum2;     // 800 (400 + 400)</p>
+                        </div>
+                    </div>
+                        <p>C divides the operators into the following groups:<br></p>
+                        <ul>
+                          <li>Arithmetic operators</li>
+                          <li>Assignment operators</li>
+                          <li>Comparison operators</li>
+                          <li>Logical operators</li>
+                          <li>Bitwise operators</li>
+                        </ul>
+                        </div>
+                        <div id="arith">
+                            <h2>Arithmetic Operators</h2>
+                                <p>Arithmetic operators are used to perform common mathematical operations.</p>
+                                <table border="1">                                  
+                                  <tr>
+                                    <td>Operator</td>
+                                    <td>Name</td>
+                                    <td>Description</td>
+                                    <td>Example</td>
+                                  </tr>
+                                  <tr>
+                                    <td>+</td>
+                                    <td>Addition</td>
+                                    <td>Adds together two values</td>
+                                    <td>x + y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>-</td>
+                                    <td>Subtraction</td>
+                                    <td>Subtracts one value from another</td>
+                                    <td>x - y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*</td>
+                                    <td>Multiplication</td>
+                                    <td>Multiplies two values</td>
+                                    <td>x * y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>/</td>
+                                    <td>Division</td>
+                                    <td>Divides one value by another</td>
+                                    <td>x / y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>%</td>
+                                    <td>Modulus</td>
+                                    <td>Returns the division remainder</td>
+                                    <td>x % y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>++</td>
+                                    <td>Increment</td>
+                                    <td>Increases the value of a variable by 1</td>
+                                    <td>++x</td>
+                                  </tr>
+                                  <tr>
+                                    <td>--</td>
+                                    <td>Decrement</td>
+                                    <td>Decreases the value of a variable by 1</td>
+                                    <td>--x</td>
+                                  </tr>
+                                </table>
+                        </div>
+                        <div id="assignop">
+                            <h2>Assignment Operators</h2>
+                                <p>Assignment operators are used to assign values to variables.<br>
+                                    In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:</p>
+                                    <div class="outer_cmd">
+                                        <p>Example</p>
+                                       <div class="inner_cmd">
+                                        <p>int x = 10;</p>
+                                    </div>
+                                </div>
+                                <p>The addition assignment operator (+=) adds a value to a variable:</p>
+                                <div class="outer_cmd">
+                                    <p>Example</p>
+                                   <div class="inner_cmd">
+                                    <p>int x = 10;<br>
+                                        x += 5;</p>
+                                </div>
+                            </div>
+                            <p>A list of all assignment operators:</p>
+                            <table border="1">                                  
+                                  <tr>
+                                    <td>Operator</td>
+                                    <td>Example</td>
+                                    <td>Means</td>
+                                  </tr>
+                                  <tr>
+                                    <td>=</td>
+                                    <td>x=5</td>
+                                    <td>x=5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>+=</td>
+                                    <td>x+=5</td>
+                                    <td>x=x+5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>-=</td>
+                                    <td>x-=3</td>
+                                    <td>x=x-3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*=</td>
+                                    <td>x*=3</td>
+                                    <td>x=x*3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>/=</td>
+                                    <td>x/=3</td>
+                                    <td>x=x/3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>%=</td>
+                                    <td>x%=3</td>
+                                    <td>x=x%3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>&=</td>
+                                    <td>x&=3</td>
+                                    <td>x=x&3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>|=</td>
+                                    <td>x|=3</td>
+                                    <td>x=x|3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>^=</td>
+                                    <td>x^=3</td>
+                                    <td>x=x^3</td>
+                                  </tr>
+                                  <tr>
+                                    <td>>>=</td>
+                                    <td>x>>=3</td>
+                                    <td>x=x>>3</td>
+                                  </tr>
+                                  <tr>
+                                    <td><<=</td>
+                                    <td>x<<=3</td>
+                                    <td>x=x<<3</td>
+                                  </tr>
+                                </table>
+                        </div>
+                        <div id="compaop">
+                            <h2>Comparison Operators</h2>
+                                <p>Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.<br>
+                                    The return value of a comparison is either 1 or 0, which means true (1) or false (0). These values are known as Boolean values, and you will learn more about them in the Booleans and If..Else chapter.<br>
+                                    In the following example, we use the greater than operator (>) to find out if 5 is greater than 3:</p>
+                                    <div class="outer_cmd">
+                                        <p>Example</p>
+                                       <div class="inner_cmd">
+                                        <p>int x = 5;<br>
+                                            int y = 3;<br>
+                                            printf("%d", x > y); // returns 1 (true) because 5 is greater than 3</p>
+                                    </div>
+                                </div>
+                                <p>A list of all comparison operators:</p>
+                            <table border="1">                                  
+                                  <tr>
+                                    <td>Operator</td>
+                                    <td>Name</td>
+                                    <td>Example</td>
+                                  </tr>
+                                  <tr>
+                                    <td>==</td>
+                                    <td>Equal to</td>
+                                    <td>x==y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>!=</td>
+                                    <td>Not equal</td>
+                                    <td>x!=y</td>
+                                  </tr>
+                                  <tr>
+                                    <td>></td>
+                                    <td>Greater than</td>
+                                    <td>x>y</td>
+                                  </tr>
+                                  <tr>
+                                    <td><</td>
+                                    <td>Less than</td>
+                                    <td>x<y </td>
+                                  </tr>
+                                  <tr>
+                                    <td>>=</td>
+                                    <td>Greater than or equal to</td>
+                                    <td>x>=y</td>
+                                  </tr>
+                                  <tr>
+                                    <td><=</td>
+                                    <td>Less than or equal to</td>
+                                    <td>x<=y</td>
+                                  </tr>
+                                  </table>
+                        </div>
+                        <div id="Logicop">
+                            <h2>Logical Operators</h2>
+                                <p>You can also test for true or false values with logical operators.<br>
+                                    Logical operators are used to determine the logic between variables or values:</p>
+                                   <table border="1">                                  
+                                  <tr>
+                                    <td>Operator</td>
+                                    <td>Name</td>
+                                    <td>Description</td>
+                                    <td>Example</td>
+                                  </tr>
+                                  <tr>
+                                    <td>&&</td>
+                                    <td>Logical and</td>
+                                    <td>Returns true if both statements are true</td>
+                                    <td>x < 5 &&  x < 10</td>
+                                  </tr>
+                                  <tr>
+                                    <td>|| </td>
+                                    <td>Logical or</td>
+                                    <td>Returns true if one of the statements is true</td>
+                                    <td>x < 5 || x < 4</td>
+                                  </tr>
+                                  <tr>
+                                    <td>!</td>
+                                    <td>Logical not</td>
+                                    <td>Reverse the result, returns false if the result is true</td>
+                                    <td>!(x < 5 && x < 10)</td>
+                                  </tr>
+                                  </table>
+                        </div>
+                        <div id="sizeop">
+                            <h2>Sizeof Operators</h2>
+                                <p>The memory size (in bytes) of a data type or a variable can be found with the sizeof operator:</p>
+                                    <div class="outer_cmd">
+                                        <p>Example</p>
+                                       <div class="inner_cmd">
+                                        <p>int myInt;<br>
+                                            float myFloat;<br>
+                                            double myDouble;<br>
+                                            char myChar;<br>
+                                            
+                                            printf("%lu\n", sizeof(myInt));<br>
+                                            printf("%lu\n", sizeof(myFloat));<br>
+                                            printf("%lu\n", sizeof(myDouble));<br>
+                                            printf("%lu\n", sizeof(myChar));</p>
+                                    </div>
+                                </div>
+                        </div>
+                                <p>Note that we use the %lu format specifer to print the result, instead of %d. It is because the compiler expects the sizeof operator to return a long unsigned int (%lu), instead of int (%d). On some computers it might work with %d, but it is safer to use %lu.</p>
+                                <p>You can try yourself in this compiler</p>
+                                <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+                                <form action="saveJourney.php" method="POST">
+                                  <input type="hidden" name="pk" value="">
+                                  <input type="hidden" name="journey" value="67">
+                                  <button type="submit" value="Submit" >Save Journey </button></form>
+                                <button type="button" class="Next"><a href="../C Quiz/page10/index.html">Quiz</a></button>
+                              </body>
+                                </html>

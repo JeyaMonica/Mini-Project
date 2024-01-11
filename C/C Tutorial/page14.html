@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Loops</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1> While Loop</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="while">
+        <h2>Loops</h2>
+            <p>Loops can execute a block of code as long as a specified condition is reached.</p>
+            <p>Loops are handy because they save time, reduce errors, and they make code more readable. </p>
+            <h2>While Loop </h2>
+            <p>The while loop loops through a block of code as long as a specified condition is true:</p>
+            <div class="outer_cmd">
+                        <p>Syntax</p>
+                       <div class="inner_cmd">
+                        <p>while (condition) {<br>
+                            // code block to be executed<br>
+                          }</p>
+                        </div>
+                    </div>  
+                    <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i = 0;<br>
+
+                            while (i < 5) {<br>
+                              printf("%d\n", i);<br>
+                              i++;<br>
+                            }</p>
+                        </div>
+                    </div> 
+                    <p><b>Note</b>: Do not forget to increase the variable used in the condition (i++), otherwise the loop will never end!</p> 
+      </div>
+      <div id="dowhile">
+        <h2>The Do/While Loop</h2>
+            <p>The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+            <div class="outer_cmd">
+                        <p>Syntax</p>
+                       <div class="inner_cmd">
+                        <p>do {<br>
+                            // code block to be executed<br>
+                        }<br>
+                          while (condition);</p>
+                        </div>
+                    </div>
+                    <p>The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>          
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i=o;<br>
+                            do {<br>
+                                printf("%d\n", i);<br>
+                                i++;<br>
+                        }<br>
+                          while (i< 5);</p>
+                        </div>
+                    </div>
+                    <p>Do not forget to increase the variable used in the condition, otherwise the loop will never end!</p>
+                </div>
+                 <p>You can try yourself in this compiler</p>
+                 <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>                
+                 <button type="button" class="Next"><a href="../C Quiz/page14/index.html">Quiz</a></button>
+                </body>
+</html>

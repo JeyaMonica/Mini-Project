@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Switch</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Switch</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="switch">
+        <h2>Switch Statement</h2>
+            <p>Instead of writing many if..else statements, you can use the switch statement.</p>
+            <p>The switch statement selects one of many code blocks to be executed:</p>
+            <div class="outer_cmd">
+                        <p>Syntax</p>
+                       <div class="inner_cmd">
+                        <p>switch(expression) {<br>
+                          case x:<br>
+                            // code block<br>
+                            break;<br>
+                          case y:<br>
+                            // code block<br>
+                            break;<br>
+                          default:<br>
+                            // code block<br>
+                        }</p>
+                        </div>
+                    </div>  
+                    <p>This is how it works:</p>
+                    <p>The switch expression is evaluated once<br></p>
+                    <ul>
+                      <li>The value of the expression is compared with the values of each case<br></li>
+                      <li> If there is a match, the associated block of code is executed<br></li>
+                      <li>The break statement breaks out of the switch block and stops the execution<br></li>
+                        <li> The default statement is optional, and specifies some code to run if there is no case match</li>
+                    </ul>
+                    <p>The example below uses the weekday number to calculate the weekday name:</p>
+                      <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int day = 4;<br>
+
+                          switch (day) {<br>
+                            case 1:<br>
+                              printf("Monday");<br>
+                              break;<br>
+                            case 2:<br>
+                              printf("Tuesday");<br>
+                              break;<br>
+                            case 3:<br>
+                              printf("Wednesday");<br>
+                              break;<br>
+                            case 4:<br>
+                              printf("Thursday");<br>
+                              break;<br>
+                            case 5:<br>
+                              printf("Friday");<br>
+                              break;<br>
+                            case 6:<br>
+                              printf("Saturday");<br>
+                              break;<br>
+                            case 7:<br>
+                              printf("Sunday");<br>
+                              break;<br>
+                          }<br>
+                          
+                          // Outputs "Thursday" (day 4)</p>
+                        </div>
+                    </div> 
+                   </div>
+                <div id="breakkey">
+                    <h2>The break Keyword</h2>
+                        <p>When C reaches a break keyword, it breaks out of the switch block.<br>
+
+                          This will stop the execution of more code and case testing inside the block.<br>
+                          
+                          When a match is found, and the job is done, it's time for a break. There is no need for more testing.<br>
+                          
+                          A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.</p>
+                          <h2>The default Keyword</h2>
+                          <p>The default keyword specifies some code to run if there is no case match:</p>
+                        <div class="outer_cmd">
+                            <p>Example</p>
+                           <div class="inner_cmd">
+                            <p>int day = 4;<br>
+
+                              switch (day) {<br>
+                                case 6:<br>
+                                  printf("Today is Saturday");<br>
+                                  break;<br>
+                                case 7:<br>
+                                  printf("Today is Sunday");<br>
+                                  break;<br>
+                                default:<br>
+                                  printf("Looking forward to the Weekend");<br>
+                              }<br>
+                              // Outputs "Looking forward to the Weekend"<br>
+                              </p>
+                            </div>
+                        </div>
+                        <p><b>Note</b>: The default keyword must be used as the last statement in the switch, and it does not need a break.</p>
+                     </div>
+                        <p>You can try yourself in this compiler</p>
+                        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>        
+                        <button type="button" class="Next"><a href="../C Quiz/page13/index.html">Quiz</a></button>
+                      </body>
+</html>

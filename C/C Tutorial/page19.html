@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Strings</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Strings</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="string">
+        <h2>Strings</h2>
+            <p>Strings are used for storing text/characters.</p>
+            <p>For example, "Hello World" is a string of characters.<br>
+
+                Unlike many other programming languages, C does not have a String type to easily create string variables. Instead, you must use the char type and create an array of characters to make a string in C:</p>
+                <div class="outer_cmd">
+                    <div class="inner_cmd">
+                    <p>char greetings[] = "Hello World!";</p>
+                    </div>
+                </div>
+                <p>Note that you have to use double quotes ("").<br>
+
+                    To output the string, you can use the printf() function together with the format specifier %s to tell C that we are now working with strings:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                        <div class="inner_cmd">
+                        <p>char greetings[] = "Hello World!";<br>
+                            printf("%s", greetings);</p>
+                        </div>
+                    </div>    
+                 </div>
+                <div id="strioper">
+                <h2>Access Strings</h2>
+                    <p>Since strings are actually arrays in C, you can access a string by referring to its index number inside square brackets [].<br>
+
+                        This example prints the first character (0) in greetings:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>char greetings[] = "Hello World!";<br>
+                            printf("%c", greetings[0]);<br>
+                            </p>
+                        </div>
+                    </div>
+                    <p>Note that we have to use the %c format specifier to print a single character.</p> 
+                    <h2>Modify Strings</h2>
+                    <p>To change the value of a specific character in a string, refer to the index number, and use single quotes:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>char greetings[] = "Hello World!";<br>
+                            greetings[0] = 'J';<br>
+                            printf("%s", greetings);<br>
+                            // Outputs Jello World! instead of Hello World!</p>
+                        </div>
+                    </div> 
+                    <h2>Loop Through a String</h2>
+                    <p>You can also loop through the characters of a string, using a for loop:</p>
+                   <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>char carName[] = "Volvo";<br>
+                            int i;<br>
+                            
+                            for (i = 0; i < 5; ++i) {<br>
+                              printf("%c\n", carName[i]);<br>
+                            }</p>
+                        </div>
+                    </div>
+                    <h2>Another Way Of Creating Strings</h2> 
+                    <p>In the examples above, we used a "string literal" to create a string variable. This is the easiest way to create a string in C.<br>
+
+                        You should also note that you can create a string with a set of characters. This example will produce the same result as the example in the beginning of this page:</p>   
+                       <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};<br>
+                            printf("%s", greetings);
+                            </p>
+                        </div>
+                    </div>  
+                    <p>Why do we include the \0 character at the end?</p> 
+                    <p>This is known as the "null terminating character", and must be included when creating strings using this method. It tells C that this is the end of the string.</p>   
+                </div>
+                <div id="diff">
+                    <h2>Differences</h2>
+                        <p>The difference between the two ways of creating strings, is that the first method is easier to write, and you do not have to include the \0 character, as C will do it for you.<br>
+
+                            You should note that the size of both arrays is the same: They both have 13 characters (space also counts as a character by the way), including the \0 character:</p>
+                        <div class="outer_cmd">
+                            <p>Example</p>
+                           <div class="inner_cmd">
+                            <p>char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};<br>                                
+                                char greetings2[] = "Hello World!";<br>
+                                
+                                printf("%lu\n", sizeof(greetings));   // Outputs 13<br>
+                                printf("%lu\n", sizeof(greetings2));  // Outputs 13</p>
+                            </div>
+                        </div>
+                       </div>
+                 <p>You can try yourself in this compiler</p>
+                 <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe> 
+                 <button type="button" class="Next"><a href="../C Quiz/page19/index.html">Quiz</a></button>
+    </body>
+</html>

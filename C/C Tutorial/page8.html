@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Type Conversion</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Type Conversion</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+        <div id="TypeConversion">
+            <h2>Type Conversion</h2>
+            <p>Sometimes, you have to convert the value of one data type to another type. This is known as type conversion.</p>
+            <p>For example, if you try to divide two integers, 5 by 2, you would expect the result to be 2.5. But since we are working with integers (and not floating-point values), the following example will just output 2:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int x = 5;<br>
+                    int y = 2;<br>
+                    int sum = 5 / 2;<br>
+                    
+                    printf("%d", sum); // Outputs 2</p>
+                </div>
+            </div>
+            <p>To get the right result, you need to know how type conversion works.</p>
+            <p>There are two types of conversion in C:</p>
+            <ul>
+                <li>Implicit Conversion (automatically)</li>
+                <li>Explicit Conversion (manually)</li>
+            </ul>
+        </div>
+        <div id="implicitconversion">
+            <h2>Implicit Conversion</h2>
+            <p>Implicit conversion is done automatically by the compiler when you assign a value of one type to another.</p>
+            <p>For example, if you assign an int value to a float type:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Automatic conversion: int to float<br>
+                    float myFloat = 9;<br>
+                    
+                    printf("%f", myFloat); // 9.000000</p>
+                </div>
+            </div>
+            <p>As you can see, the compiler automatically converts the int value 9 to a float value of 9.000000.</p>
+            <p>This can be risky, as you might lose control over specific values in certain situations.<br>
+                Especially if it was the other way around - the following example automatically converts the float value 9.99 to an int value of 9:</p>
+                <div class="outer_cmd">
+                    <p>Example</p>
+                    <div class="inner_cmd">
+                        <p>// Automatic conversion: float to int<br>
+                        int myInt = 9.99;<br>
+                        
+                        printf("%d", myInt); // 9</p>
+                    </div>
+                </div>
+                <p>What happened to .99? We might want that data in our program! So be careful. It is important that you know how the compiler work in these situations, to avoid unexpected results.</p>
+                <p>As another example, if you divide two integers: 5 by 2, you know that the sum is 2.5. And as you know from the beginning of this page, if you store the sum as an integer, the result will only display the number 2. Therefore, it would be better to store the sum as a float or a double, right?</p>
+                <div class="outer_cmd">
+                    <p>Example</p>
+                    <div class="inner_cmd">
+                        <p>float sum = 5 / 2;<br>
+
+                        printf("%f", sum); // 2.000000</p>
+                    </div>
+                </div>
+                <p>Why is the result 2.00000 and not 2.5? Well, it is because 5 and 2 are still integers in the division. In this case, you need to manually convert the integer values to floating-point values. (see below). </p>
+        </div>
+        <div id="explicitconversion">
+            <h2>Explicit Conversion</h2>
+            <p>Explicit conversion is done manually by placing the type in parentheses () in front of the value.</p>
+            <p>Considering our problem from the example above, we can now get the right result:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Manual conversion: int to float<br>
+                    float sum = (float) 5 / 2;<br>
+                    
+                    printf("%f", sum); // 2.500000</p>
+                </div>
+            </div>
+            <p>You can also place the type in front of a variable:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int num1 = 5;<br>
+                    int num2 = 2;<br>
+                    float sum = (float) num1 / num2;<br>
+                    
+                    printf("%f", sum); // 2.500000</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int num1 = 5;<br>
+                    int num2 = 2;<br>
+                    float sum = (float) num1 / num2;<br>
+                    
+                    printf("%.1f", sum); // 2.5</p>
+                </div>
+            </div>
+        </div>
+        <p>You can try yourself in this compiler</p>
+        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe> 
+        <button type="button" class="Next"><a href="../C Quiz/page8/index.html">Quiz</a></button>
+    </main>
+</body>
+</html>

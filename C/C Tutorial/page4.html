@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Output</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Output</h1>
+        <hr size="1"> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#output">Print Text</a></li>
+            <li><a href="#newlines">New Lines</a></li>
+        </ul>
+    </nav>
+    <main>
+      <div id="output">
+        <h2>Print Text</h2>
+            <p>To output values or print text in C, you can use the printf() function:</p>
+             </div>
+             <div class="outer_cmd">
+                <p>Example</p>
+               <div class="inner_cmd">
+                <p>#include &lt;stdio.h&gt; </p>
+
+                   <p>int main() {</p>
+                     <p><br>printf("Hello World!");</p>
+                     <p><br> return 0;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <p>You can use as many printf() functions as you want. However, note that it does not insert a new line at the end of the output:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+               <div class="inner_cmd">
+                <p>#include &lt;stdio.h&gt; </p>
+
+                   <p>int main() {</p>
+                     <p><br>printf("Hello World!");</p>
+                     <p><br>printf("I am learning C.");</p>
+                     <p><br> return 0;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <div id="newlines">
+                <h2>New Lines</h2>
+                    <p>To insert a new line, you can use the \n character:</p>
+                     </div>
+                     <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>#include &lt;stdio.h&gt; </p>
+        
+                           <p>int main() {</p>
+                             <p><br>printf("Hello World!\n");</p>
+                             <p><br>printf("I am learning C.");</p>
+                             <p><br> return 0;</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <p>You can also output multiple lines with a single printf() function. However, this could make the code harder to read:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>#include &lt;stdio.h&gt; </p>
+        
+                           <p>int main() {</p>
+                             <p><br>printf("Hello World!\nI am Learning C.\nAnd it is great!");</p>
+                             <p><br> return 0;</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <p><b>Tip</b>: Two \n characters after each other will create a blank line:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>#include &lt;stdio.h&gt; </p>
+        
+                           <p>int main() {</p>
+                             <p><br>printf("Hello World!\n\n");
+                             <p><br>printf("I am Learning C.");</p>
+                             <p><br> return 0;</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <p>What is \n exactly?</p><br>
+                    <p>The newline character (\n) is called an escape sequence, and it forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.</p>
+                    <p>Examples of other valid escape sequences are:</p>
+                    <table border="1">
+                        <tr>
+                          <td>Escape sequence</td>
+                          <td>Description</td>
+                        </tr>
+                        <tr>
+                          <td>\t</td>
+                          <td>Creates a horizontal tab</td>
+                        </tr>
+                        <tr>
+                          <td>\\</td>
+                          <td>Inserts a backslash character(\)</td>
+                        </tr>
+                        <tr>
+                          <td>\"</td>
+                          <td>Inserts a double quote character</td>
+                        </tr>
+                      </table>
+                      <p>You can try yourself in this compiler</p>
+                      <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>          
+                      <button type="button" class="Next"><a href="../C Quiz/page4/index.html">Quiz</a></button>
+                    </body>
+           </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Multidimensional Arrays</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Multidimensional Arrays</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="multirrays">
+        <h2> Multidimensional Arrays</h2>
+            <p>A multidimensional array is basically an array of arrays.<br>
+
+                Arrays can have any number of dimensions. In this chapter, we will introduce the most common; two-dimensional arrays (2D).</p>
+            <h2>Two-Dimensional Arrays</h2>
+            <p>A 2D array is also known as a matrix (a table of rows and columns).<br>
+
+                To create a 2D array of integers, take a look at the following example:</p>
+                <div class="outer_cmd">
+                    <div class="inner_cmd">
+                    <p>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };</p>
+                    </div>
+                </div>
+                <p>The first dimension represents the number of rows [2], while the second dimension represents the number of columns [3]. The values are placed in row-order, and can be visualized like this:</p>
+                <img src="https://www.w3schools.com/c/col-row.png"alt="image">
+            </div>
+                <div id="array2oper">
+                <h2>Access the Elements of a 2D Array</h2>
+                    <p>To access an element of a two-dimensional array, you must specify the index number of both the row and column.<br>
+
+                        This statement accesses the value of the element in the first row (0) and third column (2) of the matrix array.</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };<br>
+
+                            printf("%d", matrix[0][2]);  // Outputs 2</p>
+                        </div>
+                    </div> 
+                    <p><b>Remember that</b>: Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p>
+                    <h2>Change Elements in a 2D Array</h2>
+                    <p>To change the value of an element, refer to the index number of the element in each of the dimensions:<br>
+
+                        The following example will change the value of the element in the first row (0) and first column (0):</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };<br>
+                            matrix[0][0] = 9;<br>
+                            
+                            printf("%d", matrix[0][0]);  // Now outputs 9 instead of 1</p>
+                        </div>
+                    </div> 
+                    <h2>Loop Through a 2D Array</h2>
+                    <p>To loop through a multi-dimensional array, you need one loop for each of the array's dimensions.<br>                       
+                        The following example outputs all elements in the matrix array:</p>
+                   <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };<br>
+
+                            int i, j;<br>
+                            for (i = 0; i < 2; i++) {<br>
+                              for (j = 0; j < 3; j++) {<br>
+                                printf("%d\n", matrix[i][j]);<br>
+                              }<br>
+                            }</p>
+                        </div>
+                    </div>     
+                </div>
+               <p>You can try yourself in this compiler</p>
+               <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>   
+               <button type="button" class="Next"><a href="../C Quiz/page18/index.html">Quiz</a></button>
+            </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="quiz">
+			<h1>Simple Quiz</h1>
+			<hr>
+			<form id="quiz-form">
+				<h3>Which of the following is used to specify a block of code to be executed, if a specified condition is true?</h3>
+				<label><input type="radio" name="q1" value="a">If</label><br>
+				<label><input type="radio" name="q1" value="b">Equals</label><br>
+				<label><input type="radio" name="q1" value="c">CodeBlock</label><br>
+                <br>
+                <input type="button" value="Submit" onclick="submitQuiz()">
+			</form>
+			<br>
+			<div id="quiz-results"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

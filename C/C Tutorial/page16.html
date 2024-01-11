@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Break and Continue</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Break and Continue</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="break">
+        <h2>Break</h2>
+            <p>You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.</p>
+            <p>The break statement can also be used to jump out of a loop.<br>
+
+                This example jumps out of the for loop when i is equal to 4:</p>
+            <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i;<br>
+
+                            for (i = 0; i < 10; i++) {<br>
+                              if (i == 4) {<br>
+                                break;<br>
+                              }<br>
+                              printf("%d\n", i);<br>
+                            }</p>
+                        </div>
+                    </div>  
+                    <h2>Continue</h2>
+                    <p>The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.<br>
+
+                        This example skips the value of 4:</p>
+                        <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i;<br>
+
+                            for (i = 0; i < 10; i++) {<br>
+                              if (i == 4) {<br>
+                                continue;<br>
+                              }<br>
+                              printf("%d\n", i);<br>
+                            }</p>
+                        </div>
+                    </div> 
+                   </div>
+                <div id="breakcont">
+                    <h2>Break and Continue in While Loop</h2>
+                        <p>You can also use break and continue in while loops:</p>
+                         <div class="outer_cmd">
+                            <p>Example: Using break</p>
+                           <div class="inner_cmd">
+                            <p>int i = 0;<br>
+
+                                while (i < 10) {<br>
+                                  if (i == 4) {<br>
+                                    break;<br>
+                                  }<br>
+                                  printf("%d\n", i);<br>
+                                  i++;<br>
+                                }</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="outer_cmd">
+                            <p>Example:Using continue</p>
+                           <div class="inner_cmd">
+                            <p>int i = 0;<br>
+
+                                while (i < 10) {<br>
+                                  if (i == 4) {<br>
+                                    i++;<br>
+                                    continue;<br>
+                                  }<br>
+                                  printf("%d\n", i);<br>
+                                  i++;<br>
+                                }</p>
+                            </div>
+                        </div>
+                     </div>
+                        <p>You can try yourself in this compiler</p>
+                        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>         
+                        <button type="button" class="Next"><a href="../C Quiz/page16/index.html">Quiz</a></button>
+                      </body>
+</html>

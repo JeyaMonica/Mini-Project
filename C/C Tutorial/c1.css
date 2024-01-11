@@ -1,0 +1,71 @@
+body {
+    margin:0px;
+    border: 0px;
+    font-family: Consolas;
+    line-height: 2em;
+  }
+  
+  header {
+    font-size:30px;
+    color:rgb(106, 18, 189);
+  }
+  main {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+   div h2 {
+    font-size: 30px;
+    color:rgb(173, 101, 240);
+  }
+  .sidebar{
+    background-color: rgb(173, 101, 240);
+    border:0px;
+    width:0px;
+    margin:0px;
+    padding:0%;
+    padding-bottom: 650px;
+
+}
+button{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(173, 101, 240);
+    transition-duration: 0.7s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Consolas;
+}
+button:hover{
+    background-color: rgb(173, 101, 240);
+    color: white;
+}
+.outer_cmd{
+    padding: 20px;
+    background-color:rgb(173, 101, 240,0.75) ;
+    border-radius: 15px;
+}
+.inner_cmd{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    border-radius: 15px;
+    
+}
+.iframe{
+    height:600px;
+    width:900px;
+    border-radius: 15px;
+}
+table, tr, td{
+  border: 3px rgb(173, 101, 240,0.76) ;
+  border-collapse: collapse;
+  
+}
+tr,td{
+  border-style:inset;
+}
+
+

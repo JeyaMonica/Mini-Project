@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Constants</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Constants</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+        <div id="constant">
+            <h2>Constants</h2>
+            <p>If you don't want others (or yourself) to change existing variable values, you can use the const keyword.</p>
+            <p>This will declare the variable as "constant", which means unchangeable and read-only:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>const int myNum = 15;  // myNum will always be 15<br>
+                    myNum = 10;  // error: assignment of read-only variable 'myNum'</p>
+                </div>
+            </div>
+            <p>You should always declare the variable as constant when you have values that are unlikely to change:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>const int minutesPerHour = 60;<br>
+                    const float PI = 3.14;</p>
+                </div>
+            </div>
+            <p>When you declare a constant variable, it must be assigned with a value:</p>
+            <div class="outer_cmd">
+                <p>Example<br>Like this:</p>
+                <div class="inner_cmd">
+                    <p>const int minutesPerHour = 60;</p>
+                </div>
+                <p>This however, will not work:</p>
+                <div class="inner_cmd">
+                    <p>const int minutesPerHour;<br>
+                    minutesPerHour = 60; // error</p>
+                </div>
+            </div>
+        </div>    
+        <p>You can try yourself in this compiler</p>
+        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>    
+        <button type="button" class="Next"><a href="../C Quiz/page9/index.html">Quiz</a></button>
+    </main>
+</body>
+</html>

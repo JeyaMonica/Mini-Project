@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Variables</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Variables</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+        <div id="variables">
+            <h2>Variables</h2>
+            <p>Variables are containers for storing data values, like numbers and characters.</p>
+            <p>In C, there are different types of variables (defined with different keywords), for example:</p>
+            <ul>
+                <li>int - stores integers (whole numbers), without decimals, such as 123 or -123 </li>
+                <li>float - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            </ul>
+        </div>
+        
+        <div id="decvar">
+            <h2>Declaring Variables</h2>
+            <p>To create a variable, specify the type and assign it a value:</p>
+            <div class="outer_cmd">
+                <p>Syntax</p>
+                <div class="inner_cmd">
+                    <p>type variableName = value;</p>
+                </div>
+            </div>
+            <p>Where type is one of C types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.</p>
+            <p>So, to create a variable that should store a number, look at the following example:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <p>Create a variable called myNum of type int and assign the value 15 to it:</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p>
+                </div>
+            </div>
+            <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Declare a variable</p>
+                    <p>int myNum;</p><br>
+                    <p>// Assign a value to the variable</p>
+                    <p>myNum = 15;</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="outputvar">
+            <h2>Output Variables</h2>
+            <p>You learned from the output chapter that you can output values/print text with the printf() function:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>printf("Hello World!");</p>
+                </div>
+            </div>
+            <p>In many other programming languages (like Python, Java, and C++), you would normally use a print function to display the value of a variable. However, this is not possible in C:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p>
+                    <p>printf(myNum);//Nothing happens</p>
+                </div>
+            </div>
+            <p>To output variables in C, you must get familiar with something called "format specifiers".</p>
+        </div>
+        
+        <div id="format">
+            <h2>Format Specifiers</h2>
+            <p>Format specifiers are used together with the printf() function to tell the compiler what type of data the variable is storing. It is basically a placeholder for the variable value</p>
+            <p>A format specifier starts with a percentage sign %, followed by a character.</p>
+            <p>For example, to output the value of an int variable, you must use the format specifier %d or %i surrounded by double quotes, inside the printf() function:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p><br> 
+                    <p>printf("%d", myNum);  // Outputs 15</p>
+                </div>
+            </div>
+            <p>To print other types, use %c for char and %f for float:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Create variables</p>
+                    <p>int myNum = 15;          // Integer (whole number)</p>
+                    <p>float myFloatNum = 5.99;   // Floating point number</p>
+                    <p>char myLetter = 'D';       // Character</p> <br>
+                    <p>// Print variables</p>
+                    <p>printf("%d\n", myNum);</p>
+                    <p>printf("%f\n", myFloatNum);</p>
+                    <p>printf("%c\n", myLetter);</p>
+                </div>
+            </div>
+            <p>To combine both text and a variable, separate them with a comma inside the printf() function:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p><br> 
+                    <p>printf("My favorite number is: %d", myNum);</p>
+                </div>
+            </div>
+            <p>To print different types in a single printf() function, you can use the following:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p>
+                    <p>char myLetter = 'D';</p>
+                    <p>printf("My number is: %d" and my letter is %c", myNum,myLetter);</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="changevarvalue">
+            <h2>Change Variable Values</h2>
+            <p><b>Note</b>: If you assign a new value to an existing variable, it will overwrite the previous value:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;  // myNum is 15<br>
+                    myNum = 10;  // Now myNum is 10</p>
+                </div>
+            </div>
+            <p>You can also assign the value of one variable to another:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int myNum = 15;</p>
+                    <p>int myOtherNum = 23;<br>
+                    // Assign the value of myOtherNum (23) to myNum<br>
+                    myNum = myOtherNum;<br>
+                    // myNum is now 23, instead of 15<br>
+                    printf("%d", myNum);</p>
+                </div>
+            </div>
+            <p>Or copy values to empty variables:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Create a variable and assign the value 15 to it</p>
+                    <p>int myNum = 15;<br>// Declare a variable without assigning it a value</p>
+                    <p>int myOtherNum;<br>
+                    // Assign the value of myNum to myOtherNum<br>
+                    myOtherNum = myNum;<br>
+                    // myNum now has 15 as a value<br>
+                    printf("%d", myOtherNum);</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="addvar">
+            <h2>Add Variable Together</h2>
+            <p>To add a variable to another variable, you can use the + operator:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int x = 5;<br>
+                    int y = 6;<br>
+                    int sum = x + y;<br>
+                    printf("%d", sum);</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="decmulvar">
+            <h2>Declare Multiple Variables</h2>
+            <p>To declare more than one variable of the same type, use a comma-separated list:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int x = 5, y = 6, z = 50;<br>
+                    printf("%d", x + y + z);</p>
+                </div>
+            </div>
+            <p>You can also assign the same value to multiple variables of the same type:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int x, y, z;<br>
+                    x = y = z = 50;<br>
+                    printf("%d", x + y + z);</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="varname">
+            <h2> Variable Names</h2>
+            <p>All C variables must be identified with unique names.</p>
+            <p>These unique names are called identifiers.</p>
+            <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+            <p><b>Note</b>: It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>// Good<br>
+                    int minutesPerHour = 60;<br>
+                    // OK, but not so easy to understand what m actually is<br>
+                    int m = 60;</p>
+                </div>
+            </div>
+            <p>The general rules for naming variables are:</p>
+            <ul>
+                <li>Names can contain letters, digits and underscores</li>
+                <li>Names must begin with a letter or an underscore (_)</li>
+                <li>Names are case sensitive (myVar and myvar are different variables)</li>
+                <li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+                <li>Reserved words (such as int) cannot be used as names. </li>
+            </ul>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <div class="inner_cmd">
+                    <p>int x, y, z;<br>
+                    x = y = z = 50;<br>
+                    printf("%d", x + y + z);</p>
+                </div>
+            </div>
+            <p>You can try yourself in this compiler</p>
+        </div>
+        
+        <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+        <button type="button" class="Next"><a href="../C Quiz/page6/index.html">Quiz</a></button>
+    </main>
+</body>
+</html>

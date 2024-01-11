@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Conditional Statements</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Conditional Statements</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="ifelse">
+        <h2>Conditions and If Statements</h2>
+            <p>You have already learned that C supports the usual logical conditions from mathematics:</p>
+            <ul>
+              <li>Less than: a &lt; b</li>
+                <li> Less than or equal to: a &lt;= b</li>
+                  <li>Greater than: a &gt; b</li>
+                    <li>Greater than or equal to: a &gt;= b</li>
+                      <li>Equal to a == b</li>
+                        <li>Not Equal to: a != b</li>
+                        </ul>
+            <p> You can use these conditions to perform different actions for different decisions. </p>
+            <p>C has the following conditional statements:<br></p>
+           <ul>
+            <li>Use if to specify a block of code to be executed, if a specified condition is true<br></li>
+            <li>Use else to specify a block of code to be executed, if the same condition is false<br></li>
+              <li>Use else if to specify a new condition to test, if the first condition is false<br></li>
+                <li>Use switch to specify many alternative blocks of code to be executed</li>
+           </ul>
+            </div>
+            <div id="ifst">
+                <h2>If Statement</h2>
+                    <p>Use the if statement to specify a block of code to be executed if a condition is true.</p>
+                    <div class="outer_cmd">
+                        <p>Syntax</p>
+                       <div class="inner_cmd">
+                        <p>if (condition) {<br>
+                            // block of code to be executed if the condition is true<br>
+                          }</p>
+                        </div>
+                    </div>  
+                    <p>Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.</p>
+                    <p>In the example below, we test two values to find out if 30 is greater than 19. If the condition is true, print some text:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>if (30>19) {<br>
+                            printf("30 is greater than 19");<br>
+                          }</p>
+                        </div>
+                    </div> 
+                    <p>We can also test variables:</p> 
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int x = 20;<br>
+                            int y = 18;<br>
+                            if (x > y) {<br>
+                              printf("x is greater than y");<br>
+                            }</p>
+                        </div>
+                    </div>
+                    <h3>Explanation</h3> 
+                    <p>In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). As x is 30, and y is 19, and we know that 30 is greater than 19, we print to the screen that "x is greater than y".</p>          
+                </div>
+                <div id="elsestate">
+                    <h2>The else Statement</h2>
+                        <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+                        <div class="outer_cmd">
+                            <p>Syntax</p>
+                           <div class="inner_cmd">
+                            <p>if (condition) {<br>
+                                // block of code to be executed if the condition is true<br>
+                              } else {<br>
+                                // block of code to be executed if the condition is false<br>
+                              }</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="outer_cmd">
+                            <p>Example</p>
+                           <div class="inner_cmd">
+                            <p>int time = 22;<br>
+                                if (time < 10) {<br>
+                                  printf("Good morning.");<br>
+                                } else if (time < 20) {<br>
+                                  printf("Good day.");<br>
+                                } else {<br>
+                                  printf("Good evening.");<br>
+                                }<br>
+                                // Outputs "Good evening."</p>
+                            </div>
+                        </div>
+                        <h3>Explanation</h3>
+                        <p>In the example above, time (22) is greater than 10, so the first condition is false. The next condition, in the else if statement, is also false, so we move on to the else condition since condition1 and condition2 is both false - and print to the screen "Good evening".</p>
+                        <p>However, if the time was 14, our program would print "Good day."</p>
+                         <h3>Example</h3>   
+                            <p>This example shows how you can use if..else to find out if a number is positive or negative:</p>
+                            <div class="outer_cmd">
+                                <p>Example</p>
+                               <div class="inner_cmd">
+                                <p>int myNum = 10; // Is this a positive or negative number?<br>
+
+                                    if (myNum > 0) {<br>
+                                      printf("The value is a positive number.");<br>
+                                    } else if (myNum < 0) {<br>
+                                      printf("The value is a negative number.");<br>
+                                    } else {<br>
+                                      printf("The value is 0.");<br>
+                                    }</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div id="terna">
+                            <h2>C Short Hand If Else</h2>
+                                <p>There is also a short-hand if else, which is known as the ternary operator because it consists of three operands. It can be used to replace multiple lines of code with a single line. It is often used to replace simple if else statements:</p>
+                                <div class="outer_cmd">
+                                    <p>Syntax</p>
+                                   <div class="inner_cmd">
+                                    <p>variable = (condition) ? expressionTrue : <br>expressionFalse;</p>
+                                    </div>
+                                </div>
+                                <p>Instead of writing:</p>
+                                <div class="outer_cmd">
+                                    <p>Example</p>
+                                   <div class="inner_cmd">
+                                    <p>int time = 20;<br>
+                                        if (time < 18) {<br>
+                                          printf("Good day.");<br>
+                                        } else {<br>
+                                          printf("Good evening.");<br>
+                                        }</p>
+                                    </div>
+                                </div>
+                                <p>You can simply write:</p>
+                                <div class="outer_cmd">
+                                        <p>Example</p>
+                                       <div class="inner_cmd">
+                                        <p>int time = 20;<br>
+                                            (time < 18) ? printf("Good day.") : printf("Good evening.");</p>
+                                        </div>
+                                    </div>  
+                                    <p>It is completely up to you if you want to use the traditional if...else statement or the ternary operator.</p>  
+                                </div>
+                                <p>You can try yourself in this compiler</p>
+                                <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe> 
+                                <button type="button" class="Next"><a href="../C Quiz/page12/index.html">Quiz</a></button>
+  </body>
+</html>

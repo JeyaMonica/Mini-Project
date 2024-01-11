@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Arrays</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Arrays</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="Arrays">
+        <h2>Arrays</h2>
+            <p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
+            <p>To create an array, define the data type (like int) and specify the name of the array followed by square brackets [].<br>
+
+                To insert values to it, use a comma-separated list, inside curly braces:</p>
+                <div class="outer_cmd">
+                    <div class="inner_cmd">
+                    <p>int myNumbers[] = {25, 50, 75, 100};</p>
+                    </div>
+                </div>
+                <p>We have now created a variable that holds an array of four integers.</p>
+            </div>
+                <div id="arrayoper">
+                <h2>Access the Elements of an Array</h2>
+                    <p>To access an array element, refer to its index number.<br>
+
+                        Array indexes start with 0: [0] is the first element. [1] is the second element, etc.<br>                    
+                        This statement accesses the value of the first element [0] in myNumbers:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int myNumbers[] = {25, 50, 75, 100};<br>
+                            printf("%d", myNumbers[0]);<br>
+                            
+                            // Outputs 25</p>
+                        </div>
+                    </div> 
+                    <h2>Change an Array Element</h2>
+                    <p>To change the value of a specific element, refer to the index number:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>myNumbers[0] = 33;</p>
+                        </div>
+                    </div>
+                    <br> 
+                   <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int myNumbers[] = {25, 50, 75, 100};<br>
+                            myNumbers[0] = 33;<br>
+                            
+                            printf("%d", myNumbers[0]);<br>
+                            
+                            // Now outputs 33 instead of 25</p>
+                        </div>
+                    </div>
+                    <h2>Loop Through an Array</h2> 
+                    <p>You can loop through the array elements with the for loop.<br>
+
+                        The following example outputs all elements in the myNumbers array:</p>   
+                       <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int myNumbers[] = {25, 50, 75, 100};<br>
+                            int i;<br>
+                            for (i = 0; i < 4; i++) {<br>
+                                printf("%d\n", myNumbers[i]);<br>
+                            </p>
+                        </div>
+                    </div>      
+                </div>
+                <div id="arraysiz">
+                    <h2>Set Array Size</h2>
+                        <p>Another common way to create arrays, is to specify the size of the array, and add elements later:</p>
+                        <div class="outer_cmd">
+                            <p>Example</p>
+                           <div class="inner_cmd">
+                            <p>// Declare an array of four integers:<br>
+                                int myNumbers[4];<br>
+                                
+                                // Add elements<br>
+                                myNumbers[0] = 25;<br>
+                                myNumbers[1] = 50;<br>
+                                myNumbers[2] = 75;<br>
+                                myNumbers[3] = 100;</p>
+                            </div>
+                        </div>
+                        <p>Using this method, you should know the size of the array, in order for the program to store enough memory.<br>                           
+                             You are not able to change the size of the array after creation.</p>
+                </div>
+                 <p>You can try yourself in this compiler</p>
+                 <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe> 
+                 <button type="button" class="Next"><a href="../C Quiz/page17/index.html">Quiz</a></button>
+    </body>
+</html>

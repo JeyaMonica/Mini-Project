@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C User Input</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C User Input</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="userinp">
+        <h2>User Input</h2>
+            <p>You have already learned that printf() is used to output values in C.</p>
+            <p>To get user input, you can use the scanf() function:</p>
+            <div class="outer_cmd">
+                <p>Example</p>
+                <p1>Output a number entered by a user:</p>
+               <div class="inner_cmd">
+                <p>// Create an integer variable that will store the number we get from the user<br>
+                    int myNum;<br>
+                    
+                    // Ask the user to type a number<br>
+                    printf("Type a number: \n");<br>
+                    
+                    // Get and save the number the user types<br>
+                    scanf("%d", &myNum);<br>
+                    
+                    // Output the number the user typed<br>
+                    printf("Your number is: %d", myNum);</p>
+                </div>
+            </div> 
+            <p>The <b>scanf() function</b> takes two arguments: the format specifier of the variable (%d in the example above) and the reference operator (&myNum), which stores the memory address of the variable</p>
+        </div>
+            <div id="mulinp">
+                <h2>Multiple Inputs</h2>
+                    <p>The scanf() function also allow multiple inputs (an integer and a character in the following example):</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>// Create an int and a char variable<br>
+                            int myNum;<br>
+                            char myChar;<br>
+                            
+                            // Ask the user to type a number AND a character<br>
+                            printf("Type a number AND a character and press enter: \n");<br>
+                            
+                            // Get and save the number AND character the user types<br>
+                            scanf("%d %c", &myNum, &myChar);<br>
+                            
+                            // Print the number<br>
+                            printf("Your number is: %d\n", myNum);<br>
+                            
+                            // Print the character<br>
+                            printf("Your character is: %c\n", myChar);</p>
+                        </div>
+                    </div> 
+                    <h2>Take String Input</h2> 
+                    <p>You can also get a string entered by the user:</p>
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                        <p>Output the name of a user:</p>
+                       <div class="inner_cmd">
+                        <p>// Create a string<br>
+                            char firstName[30];<br>
+                            
+                            // Ask the user to input some text<br>
+                            printf("Enter your first name: \n");<br>
+                            
+                            // Get and save the text<br>
+                            scanf("%s", firstName);<br>
+                            
+                            // Output the text<br>
+                            printf("Hello %s", firstName);</p>
+                        </div>
+                    </div> 
+                    <p><b>Note</b>: When working with strings in scanf(), you must specify the size of the string/array (we used a very high number, 30 in our example, but atleast then we are certain it will store enough characters for the first name), and you don't have to use the reference operator (&).</p>
+                    <p>However, the scanf() function has some <b>limitations</b>: it considers space (whitespace, tabs, etc) as a terminating character, which means that it can only display a single word (even if you type many words). For example:</p> 
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>char fullName[30];<br>
+
+                            printf("Type your full name: \n");<br>
+                            scanf("%s", &fullName);<br>
+                            
+                            printf("Hello %s", fullName);<br>
+                            
+                            // Type your full name: John Doe<br>
+                            // Hello John</p>
+                        </div>
+                    </div>
+                    <p>From the example above, you would expect the program to print "John Doe", but it only prints "John".<br>
+                        That's why, when working with strings, we often use the fgets() function to read a line of text. Note that you must include the following arguments: the name of the string variable, sizeof(string_name), and stdin:</p>          
+                        <div class="outer_cmd">
+                            <p>Example</p>
+                           <div class="inner_cmd">
+                            <p>char fullName[30];<br>
+    
+                                printf("Type your full name: \n");<br>
+                                fgets(fullName, sizeof(fullName), stdin);<br>
+                                
+                                printf("Hello %s", fullName);<br>
+                                
+                                // Type your full name: John Doe<br>
+                                // Hello John Doe</p>
+                            </div>
+                        </div>
+                        <p>Use the scanf() function to get a single word as input, and use fgets() for multiple words.</p>
+                    </div>
+                     <p>You can try yourself in this compiler</p>
+                     <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>             
+                     <button type="button" class="Next"><a href="../C Quiz/page21/index.html">Quiz</a></button>
+    </body>
+/html>

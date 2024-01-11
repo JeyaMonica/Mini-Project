@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Loops</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>For Loop</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="for">
+        <h2> For Loop</h2>
+            <p>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+            <div class="outer_cmd">
+                        <p>Syntax</p>
+                       <div class="inner_cmd">
+                        <p>for (statement 1; statement 2; statement 3) {<br>
+                          // code block to be executed<br>
+                        }</p>
+                        </div>
+                    </div>
+                    <ul> 
+                    <li>Statement 1 is executed (one time) before the execution of the code block.</li>
+
+                      <li>Statement 2 defines the condition for executing the code block.</li>
+                      
+                     <li> Statement 3 is executed (every time) after the code block has been executed.</li>
+                  </ul>
+                      
+                      The example below will print the numbers 0 to 4:</p>
+                      <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i;<br>
+
+                          for (i = 0; i < 5; i++) {<br>
+                            printf("%d\n", i);<br>
+                          }</p>
+                        </div>
+                    </div> 
+                    <h3>Explanation</h3>
+                    <ul>
+                    <li>Statement 1 sets a variable before the loop starts (int i = 0).<br></li>
+
+                     <li> Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.</li>              
+                     <li> Statement 3 increases a value (i++) each time the code block in the loop has been executed.</li>
+                    </ul> 
+      </div>
+      <div id="nestloop">
+        <h2>Nested Loops</h2>
+            <p>It is also possible to place a loop inside another loop. This is called a nested loop.<br>
+
+              The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+              <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>do {<br>
+                            // code block to be executed<br>
+                        }<br>
+                          while (condition);</p>
+                        </div>
+                    </div>
+                    <p>The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>          
+                    <div class="outer_cmd">
+                        <p>Example</p>
+                       <div class="inner_cmd">
+                        <p>int i, j;<br>
+
+                          // Outer loop<br>
+                          for (i = 1; i <= 2; ++i) {<br>
+                            printf("Outer: %d\n", i);  // Executes 2 times<br>                        
+                            // Inner loop<br>
+                            for (j = 1; j <= 3; ++j) {<br>
+                              printf(" Inner: %d\n", j);  // Executes 6 times (2 * 3)<br>                            
+                            }<br>
+                          }</p>
+                        </div>
+                    </div>
+                </div>
+                 <p>You can try yourself in this compiler</p>
+                 <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>               
+                 <button type="button" class="Next"><a href="../C Quiz/page15/index.html">Quiz</a></button>
+                </body>
+</html>

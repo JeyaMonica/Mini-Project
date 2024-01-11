@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C DataTypes</title> 
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <header>
+        <h1>C Data Types</h1>
+        <hr size="1"> 
+    </header>
+    <main>
+      <div id="datatypes">
+        <h2>Data Types</h2>
+            <p>As explained in the Variables chapter, a variable in C must be a specified data type, and you must use a format specifier inside the printf() function to display it:</p>
+             <div class="outer_cmd">
+                <p>Example</p>
+               <div class="inner_cmd">
+                <p>// Create variables<br>
+                  int myNum = 5;             // Integer (whole number)<br>
+                  float myFloatNum = 5.99;   // Floating point number<br>
+                  char myLetter = 'D';       // Character<br>
+                  
+                  // Print variables<br>
+                  printf("%d\n", myNum);<br>
+                  printf("%f\n", myFloatNum);<br>
+                  printf("%c\n", myLetter);</p>
+                </div>
+            </div>
+      </div>
+      <div id="basicdatatypes">
+        <h2> Basic Data Types</h2>
+            <p>The data type specifies the size and type of information the variable will store.</p>
+            <p>In this tutorial, we will focus on the most basic ones:</p>
+            <table border="1">
+              <tr>
+                <td>Data Type</td>
+                <td>Size</td>
+                <td>Description</td>
+              </tr>
+              <tr>
+                <td>int</td>
+                <td>2 or 4 bytes</td>
+                <td>Stores whole numbers, without decimals</td>
+              </tr>
+              <tr>
+                <td>float</td>
+                <td>4 bytes</td>
+                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits</td>
+              </tr>
+              <tr>
+                <td>double</td>
+                <td>8 bytes</td>
+                <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits<br>
+              </tr>
+              <tr>
+                <td>char</td>
+                <td>1 byte</td>
+                <td>Stores a single character/letter/number, or ASCII values<br>
+              </tr>
+            </table>
+      </div>
+      <div id="basicformatspecifiers">
+        <h2> Basic Format Specifiers</h2>
+            <p>There are different format specifiers for each data type. Here are some of them:</p>
+            <table border="1">
+              <tr>
+                <td>Format Specifier</td>
+                <td>Data Type</td>
+              </tr>
+              <tr>
+                <td>%d or %i</td>
+                <td>int</td>
+              </tr>
+              <tr>
+                <td>%f</td>
+                <td>float</td>
+              </tr>
+              <tr>
+                <td>%lf</td>
+                <td>double</td>
+              </tr>
+              <tr>
+                <td>%c</td>
+                <td>char</td>
+              </tr>
+              <tr>
+                <td>%s</td>
+                <td>Used for strings (text)</td>
+            </table>
+            </div>
+            <div id="setdecprecision">
+              <h2>Set Decimal Precision</h2>
+                  <p>You have probably already noticed that if you print a floating point number, the output will show many digits after the decimal point:</p>
+                  <div class="outer_cmd">
+                   <p>Example</p>
+                  <div class="inner_cmd">
+                  <p>float myFloatNum = 3.5;<br>
+                  double myDoubleNum = 19.99;<br>
+                  
+                  printf("%f\n", myFloatNum); // Outputs 3.500000<br>
+                  printf("%lf", myDoubleNum); // Outputs 19.990000</p>
+                </div>
+                </div>
+                <p>If you want to remove the extra zeros (set decimal precision), you can use a dot (.) followed by a number that specifies how many digits that should be shown after the decimal point:</p>
+                <div class="outer_cmd">
+                  <p>Example</p>
+                 <div class="inner_cmd">
+                 <p>float myFloatNum = 3.5;<br>
+                  printf("%f\n", myFloatNum); // Default will show 6 digits after the decimal point<br>
+                  printf("%.1f\n", myFloatNum); // Only show 1 digit<br>
+                  printf("%.2f\n", myFloatNum); // Only show 2 digits<br>
+                  printf("%.4f", myFloatNum);   // Only show 4 digits</p>
+               </div>
+               </div>
+            </div>
+            <p>You can try yourself in this compiler</p>
+            <iframe src="https://paiza.io/projects/e/e46-sBL3iydU9nXhzOHkIg?theme=pastel_on_dark"  class="iframe" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+            <button type="button" class="Next"><a href="../C Quiz/page7/index.html">Quiz</a></button>
+      </main>
+  </body>
+</html>
